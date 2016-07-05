@@ -29,12 +29,12 @@
   :group 'environment)
 
 (defcustom quick-chords-bindings
-  '((",," quick-chords-comma))
+  '((",," quick-chords-semicolon))
   "The list of quick key bindings"
   :group 'quick-chords
   :type '(repeat (list string function)))
 
-(defun quick-chords-comma ()
+(defun quick-chords-semicolon ()
   (interactive)
   (save-excursion
     (end-of-line)
