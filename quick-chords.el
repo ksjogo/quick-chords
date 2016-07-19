@@ -29,7 +29,14 @@
   :group 'environment)
 
 (defcustom quick-chords-bindings
-  '((",," quick-chords-semicolon))
+  `((",," quick-chords-semicolon)
+    ("xk" kill-this-buffer)
+    ("hk" describe-key)
+    ("hf" describe-function)
+    ("hv" describe-variable)
+    (",." eval-expression)
+
+    )
   "The list of quick key bindings"
   :group 'quick-chords
   :type '(repeat (list string function)))
