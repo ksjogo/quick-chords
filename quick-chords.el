@@ -34,9 +34,7 @@
     ("hk" describe-key)
     ("hf" describe-function)
     ("hv" describe-variable)
-    (",." eval-expression)
-
-    )
+    (",." eval-expression))
   "The list of quick key bindings"
   :group 'quick-chords
   :type '(repeat (list string function)))
